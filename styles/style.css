@@ -5,6 +5,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #F3F1FF;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 
 main {
@@ -25,6 +28,71 @@ main {
 hr {
     border: 1px solid #D1D1D1;
     margin-bottom: 30px;
+}
+
+/* ------------------
+    Navbar styles
+-------------------*/
+header {
+    padding: 0;
+}
+nav {
+    width: calc(100% +20px);
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 0;
+    height: 94px;
+    background-color: #562EFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-content {
+    width: 930px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container img {
+    width: 40px;
+    height: 50px;
+}
+
+.logo-container span {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.nav-links {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 36px;
+}
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.nav-links img {
+    width: 51px;
+    height: 51px;
 }
 
 /* top players styles */
@@ -174,6 +242,21 @@ hr {
 
 /* Mobile Devices */
 @media only screen and (max-width: 688px) {
+    nav {
+        height: 250px;
+    }
+    .navbar-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+    .nav-links ul {
+        padding: 0;
+    }
     .container {
         width: 80%;
     }
@@ -188,6 +271,9 @@ hr {
 
 /* Tablet Devices */
 @media only screen and (min-width:689px) and (max-width:992px) {
+    .navbar-content {
+        width: 600px;
+    }
     .container {
         width: 90%;
     }
@@ -201,8 +287,5 @@ hr {
     .course .course-banner img {
         width: 250px;
         height: 150px;
-    }
-    .courses {
-        
     }
 }
