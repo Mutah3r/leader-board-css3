@@ -11,6 +11,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -178,6 +179,7 @@ hr {
     }
     .players, .blogs, .courses {
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
     }
     .player, .blog {
         flex-direction: column;
@@ -191,6 +193,7 @@ hr {
     }
     .players, .courses {
         grid-template-columns: repeat(2, 1fr);
+
     }
     .blogs {
         grid-template-columns: repeat(1, 1fr);
@@ -198,5 +201,8 @@ hr {
     .course .course-banner img {
         width: 250px;
         height: 150px;
+    }
+    .courses {
+        
     }
 }
